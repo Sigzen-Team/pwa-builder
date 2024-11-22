@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-13 12:49:04.209907",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+    "github_username",
+    "push_repository_to_an_organization",
+    "organization_name",
+    "column_break_fcrv",
+    "access_token",
+    "is_private",
+    "get_exports_on"
+   ],
+   "fields": [
+    {
+     "fieldname": "github_username",
+     "fieldtype": "Data",
+     "label": "GitHub Username"
+    },
+    {
+     "fieldname": "column_break_fcrv",
+     "fieldtype": "Column Break"
+    },
+    {
+     "fieldname": "access_token",
+     "fieldtype": "Password",
+     "label": "Access Token"
+    },
+    {
+     "default": "0",
+     "fieldname": "push_repository_to_an_organization",
+     "fieldtype": "Check",
+     "label": "Push repository to an organization"
+    },
+    {
+     "depends_on": "eval:doc.push_repository_to_an_organization",
+     "fieldname": "organization_name",
+     "fieldtype": "Data",
+     "label": "Organization Name",
+     "mandatory_depends_on": "push_repository_to_an_organization"
+    },
+    {
+     "default": "0",
+     "fieldname": "is_private",
+     "fieldtype": "Check",
+     "label": "Is Private"
+    },
+    {
+     "default": "New Commit",
+     "fieldname": "get_exports_on",
+     "fieldtype": "Select",
+     "label": "Get Exports On",
+     "options": "New Commit\nNew Branch"
+    }
+   ],
+"index_web_pages_for_search": 1,
+"issingle": 1,
+ "links": [],
+ "modified": "2024-11-13 12:50:33.025571",
+ "modified_by": "Administrator",
+ "module": "PWA Builder",
+ "name": "PWA GitHub Integration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

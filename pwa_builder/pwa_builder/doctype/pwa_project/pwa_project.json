@@ -5,51 +5,74 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project_title",
-  "sub_title",
-  "site_url",
-  "user_id",
-  "password",
-  "project_logo",
-  "description"
- ],
+    "project_title",
+    "sub_title",
+    "site_url",
+    "user_id",
+    "password",
+    "project_logo",
+    "description",
+    "column_break_kckg",
+    "github_repository_url",
+    "github_default_branch",
+    "last_push_commit"
+   ],
  "fields": [
-  {
-   "fieldname": "project_title",
-   "fieldtype": "Data",
-   "label": "Project title"
-  },
-  {
-   "fieldname": "sub_title",
-   "fieldtype": "Data",
-   "label": "Sub title"
-  },
-  {
-   "fieldname": "site_url",
-   "fieldtype": "Data",
-   "label": "Site URL"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "user_id",
-   "fieldtype": "Data",
-   "label": "User ID"
-  },
-  {
-   "fieldname": "password",
-   "fieldtype": "Password",
-   "label": "Password"
-  },
-  {
-   "fieldname": "project_logo",
-   "fieldtype": "Attach",
-   "label": "Project Logo"
-  }
- ],
+    {
+     "fieldname": "project_title",
+     "fieldtype": "Data",
+     "label": "Project title"
+    },
+    {
+     "fieldname": "sub_title",
+     "fieldtype": "Data",
+     "label": "Sub title"
+    },
+    {
+     "fieldname": "site_url",
+     "fieldtype": "Data",
+     "label": "Site URL"
+    },
+    {
+     "fieldname": "description",
+     "fieldtype": "Small Text",
+     "label": "Description"
+    },
+    {
+     "fieldname": "user_id",
+     "fieldtype": "Data",
+     "label": "User ID"
+    },
+    {
+     "fieldname": "password",
+     "fieldtype": "Password",
+     "label": "Password"
+    },
+    {
+     "fieldname": "project_logo",
+     "fieldtype": "Attach",
+     "label": "Project Logo"
+    },
+    {
+     "fieldname": "column_break_kckg",
+     "fieldtype": "Column Break"
+    },
+    {
+     "fieldname": "github_repository_url",
+     "fieldtype": "Small Text",
+     "label": "GitHub Repository URL"
+    },
+    {
+     "fieldname": "github_default_branch",
+     "fieldtype": "Data",
+     "label": "Github Default Branch"
+    },
+    {
+     "fieldname": "last_push_commit",
+     "fieldtype": "Data",
+     "label": "Last Push Commit"
+    }
+   ],
  "index_web_pages_for_search": 1,
  "links": [],
  "modified": "2024-07-29 19:52:54.207973",
